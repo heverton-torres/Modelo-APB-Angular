@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Hvt.Demo.DbMigrator": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Staging"
+      }
+    }
+  }
+}
