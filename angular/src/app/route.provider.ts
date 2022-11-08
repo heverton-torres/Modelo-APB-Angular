@@ -15,6 +15,19 @@ function configureRoutes(routesService: RoutesService) {
         order: 1,
         layout: eLayoutType.application,
       },
+      {
+        path: '/demo',
+        name: '::Menu:Demo',
+        order: 2,
+        layout: eLayoutType.application,
+      },
+      {
+        path: '/accountables',
+        name: '::Menu:Accountables',
+         parentName: '::Menu:Demo',
+        layout: eLayoutType.application,
+        requiredPolicy: 'Demo.Accountables',
+      }
     ]);
   };
 }

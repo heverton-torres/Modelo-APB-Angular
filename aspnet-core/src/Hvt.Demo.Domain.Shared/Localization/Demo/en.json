@@ -4,6 +4,13 @@
     "Menu:Home": "Home",
     "Welcome": "Welcome",
     "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "Menu:Demo": "Demo",
+    "Menu:Accountables": "Accountables",
+    "NewAccountable": "New Accountable",
+    "Permission:Accountables": "Accountable Management",
+    "Permission:Accountables.Create": "Creating new accountables",
+    "Permission:Accountables.Edit": "Editing the accountables",
+    "Permission:Accountables.Delete": "Deleting the accountables",
     "Demo:00001": "There is already an accountable with the same name: {name}"
   }
 }
