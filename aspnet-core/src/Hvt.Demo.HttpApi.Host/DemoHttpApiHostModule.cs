@@ -55,7 +55,8 @@ public class DemoHttpApiHostModule : AbpModule
         {
             PreConfigure<AbpOpenIddictAspNetCoreOptions>(options =>
             {
-                options.AddDevelopmentEncryptionAndSigningCertificate = false;
+                options.AddDevelopmentEncryptionAndSigningCertificate = true;
+
             });
 
             PreConfigure<OpenIddictServerBuilder>(builder =>
@@ -276,6 +277,6 @@ public class DemoHttpApiHostModule : AbpModule
             throw new FileNotFoundException($"Signing Certificate couldn't found: {file}");
         }
 
-        return new X509Certificate2(file, passPhrase, X509KeyStorageFlags.PersistKeySet | X509KeyStorageFlags.MachineKeySet);
+        return new X509Certificate2(file, passPhrase);
     }
 }

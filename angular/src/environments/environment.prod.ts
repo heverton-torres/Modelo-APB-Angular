@@ -1,6 +1,6 @@
 import { Environment } from '@abp/ng.core';
 
-const baseUrl = 'http://localhost:4200';
+const baseUrl = 'https://modeloui.azurewebsites.net';
 
 export const environment = {
   production: true,
@@ -10,7 +10,7 @@ export const environment = {
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: 'https://localhost:44331/',
+    issuer: 'https://modeloweb.azurewebsites.net/',
     redirectUri: baseUrl,
     clientId: 'Demo_App',
     responseType: 'code',
@@ -19,7 +19,7 @@ export const environment = {
   },
   apis: {
     default: {
-      url: 'https://localhost:44331',
+      url: 'https://modeloweb.azurewebsites.net',
       rootNamespace: 'Hvt.Demo',
     },
   },
