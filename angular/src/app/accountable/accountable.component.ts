@@ -3,7 +3,7 @@ import { ConfirmationService,Confirmation } from '@abp/ng.theme.shared';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NgbDateNativeAdapter, NgbDateAdapter } from '@ng-bootstrap/ng-bootstrap';
-import { AccountableDto, accountablePositionOptions, AccountableService } from '@proxy/accountables';
+import { AccountableDto, AccountablePosition, accountablePositionOptions, AccountableService } from '@proxy/accountables';
 
 @Component({
   selector: 'app-accountable',
@@ -64,10 +64,12 @@ export class AccountableComponent implements OnInit {
         this.selectAccountable.birthDate? new Date(this.selectAccountable.birthDate): null,
         Validators.required,
       ],
-      // position:[this.selectAccountable.position || null]
+       position:[this.selectAccountable.position || null]
     });
   }
-
+  position(id){
+    return AccountablePosition[id];
+  }
   save(){
     if (this.form.invalid) {
       return;

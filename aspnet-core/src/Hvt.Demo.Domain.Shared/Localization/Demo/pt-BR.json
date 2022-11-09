@@ -3,6 +3,19 @@
   "texts": {
     "Menu:Home": "Principal",
     "Welcome": "Seja bem-vindo!",
-    "LongWelcomeMessage": "Bem-vindo a esta aplicação. Este é um projeto inicial baseado no ABP framework. Para mais informações, visite abp.io."
+    "LongWelcomeMessage": "Bem-vindo a esta aplicação. Este é um projeto inicial baseado no ABP framework. Para mais informações, visite abp.io.",
+    "Menu:Demo": "Demonstração",
+    "Menu:Accountables": "Responsáveis",
+    "Undefined": "Indefinido",
+    "Name": "Nome",
+    "BirthDate": "Data de nascimento",
+    "Position": "Posição",
+    "NewAccountable": "Novo Responsável",
+    "SelectPosition": "Selecione uma posição",
+    "Permission:Accountables": "Gestão de Responsável",
+    "Permission:Accountables.Create": "Criar novos Responsáveis",
+    "Permission:Accountables.Edit": "Editar os Responsáveis ",
+    "Permission:Accountables.Delete": "Remover os Resonsáveis",
+    "Demo:00001": "Já existe um responsável com o mesmo nome: {name}"
   }
 }

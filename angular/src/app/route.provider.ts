@@ -20,6 +20,7 @@ function configureRoutes(routesService: RoutesService) {
         name: '::Menu:Demo',
         order: 2,
         layout: eLayoutType.application,
+        requiredPolicy: 'Demo.Accountables'
       },
       {
         path: '/accountables',
